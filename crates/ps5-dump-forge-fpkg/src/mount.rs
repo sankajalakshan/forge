@@ -28,7 +28,7 @@ const DECODED_CACHE: usize = 4;
 // ponytail: ~3 M blocks when files are few (~375 GB of mount at 256 KiB blocks, each counted
 // once as a ublock and once as a record), fewer with many small files;
 // building the `KBlock`s during the walk (one block list, not two) would lift it
-pub(crate) const MAX_OPEN: u64 = 384 << 20;
+pub(crate) const MAX_OPEN: u64 = 512 << 20;
 /// The compression type every layout this reader decodes declares (Kraken, or no payload).
 const COMP_KRAKEN: u64 = 2;
 
